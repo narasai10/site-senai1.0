@@ -1,1 +1,127 @@
+/* Cores: */
+/* #EBEBEA */
+body{
+    background-color:#E5F7F9;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+#gates{
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+}
+
+#sentence{
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+}
+
+#div-start{
+    padding: 20px;
+    background-color: #B6B6B5;
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    border-radius: 80px;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.hobbies{
+    background-color: #E2E2E2;
+    max-width: 550px;
+    border-radius: 15px;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transform: translateY(100vh);
+    animation: deslizar 1.25s ease-out forwards;
+    margin: 12px;
+    padding: 0;
+    display: inline-block;
+    border: solid 6px #E2E2E2;
+
+    
+}
+
+.centerH{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.hobbies p{
+    text-align: start;
+}
+
+#div-start:hover{
+    color: #F3CDCD;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hobbies:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes deslizar {
+    from {
+        transform: translateY(100vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.nav ul {
+    list-style-type: none;
+    margin-left: -10px;
+    margin-top: -10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .nav li {
+    float: left;
+  }
+  
+  .nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+  }
+  
+  .nav li a:hover {
+    background-color: #3f9fd3;
+  }
+
+.btn button{
+    position: fixed; /* Faz com que o botão permaneça em uma posição fixa */
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    animation: deslizar 1.25s ease-out forwards;
+    bottom: 20px; /* Distância do botão em relação ao fundo da tela */
+    left: 30px; /* Distância do botão em relação ao lado direito da tela */
+    background-color: white; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border-radius: 50%; /* Cantos arredondados */
+    border: solid 2px black;
+    cursor: pointer; /* Muda o cursor para uma mão ao passar por cima */
+    z-index: 1000; /* Garante que o botão esteja sobre outros elementos */
+}
+
+.btn button:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 3px 5px black;
+}
