@@ -12,9 +12,9 @@
 <body id="body">
     <div class="nav">
         <ul class="ul">
-            <li class="li"><a href="" class="a-li">HOBBIES</a></li>
-            <li class="li"><a href="" class="a-li">AFAZERES</a></li>
-            <li class="li"><a href="" class="a-li">FÉRIAS</a></li>
+            <li class="li"><a href="#" class="a-li" id="nav_hobbie">HOBBIES</a></li>
+            <li class="li"><a href="#" class="a-li" id="nav_afazeres">AFAZERES</a></li>
+            <li class="li"><a href="#" class="a-li" id="nav_vacation">FÉRIAS</a></li>
         </ul>
     </div>
     <div id="gates">
@@ -27,13 +27,13 @@
     
     
     <div class="centerH">
-        <div class="hobbies">
+        <div class="hobbies", id="hobbieLink">
             <h3>HOBBIES</h3>
             <ul>
                 <li>
-                    <a href="https://python.org" target="_blank">
+                    <a href="https://python.org" target="_blank" class="links">
                         <div style="float: left;">
-                            <img src="assets/py.jfif" alt="Python" id="itemImg" width="22">
+                            <img src="assets/py.jfif" alt="Python" id="python" width="22">
                             Python
                         </div>
                     </a>
@@ -41,9 +41,9 @@
                 <p class="paragraphs">Nota 10, simplesmente</p>
                 <li>
                     <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Introduction"
-                        target="_blank">
+                        target="_blank" class="links">
                         <div style="float: left;">
-                            <img src="assets/javascript.webp" alt="Python" id="itemImg" width="22">
+                            <img src="assets/javascript.webp" alt="Python" id="javascript" width="22">
                             JavaScript
                         </div>
                     </a>
@@ -52,9 +52,9 @@
                 <p class="paragraphs" style="margin: 0;"></p>
                 <li>
                     <a href="https://learn.microsoft.com/en-us/cpp/get-started/tutorial-console-cpp?view=msvc-170"
-                        target="_blank">
+                        target="_blank" class="links">
                         <div style="float: left;">
-                            <img src="assets/cpp.png" alt="Python" id="itemImg" width="22">
+                            <img src="assets/cpp.svg" alt="Python" id="cpp" width="28">
                             C++
                         </div>
                     </a>
@@ -62,13 +62,13 @@
                 <p class="paragraphs">Não sou fã, mas vamos fingir que sim!!</p>
             </ul>
         </div>
-        <div class="hobbies">
+        <div class="hobbies" id="afazeres">
             <h3>AFAZERES DO DIA A DIA</h3>
             <ul>
                 <li>
                     <p>
                     <div style="float: left;">
-                        <img src="assets/school-svgrepo-com.svg" alt="Python" id="itemImg" width="30"
+                        <img src="assets/school.svg" alt="Python" id="school" width="30"
                             style="margin: 0;">
                         Ir para escola
                     </div>
@@ -78,7 +78,7 @@
                 <li>
                     <p>
                     <div style="float: left;">
-                        <img src="assets/bed-svgrepo-com.svg" alt="Python" id="itemImg" width="30">
+                        <img src="assets/bed_black.svg" alt="Python" id="bed" width="30">
                         Dormir
                     </div>
                     </p>
@@ -87,7 +87,7 @@
                 <li>
                     <p>
                     <div style="float: left;">
-                        <img src="assets/html-5-svgrepo-com.svg" alt="Python" id="itemImg" width="30">
+                        <img src="assets/html.svg" alt="Python" id="html" width="30">
                         Usar HTML
                     </div>
                     </p>
@@ -95,12 +95,12 @@
                 <p>Mesmo sendo muito chato</p>
             </ul>
         </div>
-        <div class="hobbies">
+        <div class="hobbies" id="vacation">
             <h3>O QUE FIZ NAS FÉRIAS</h3>
             <ul>
                 <li>
                     <div style="float: left;">
-                        <img src="assets/python-opened-svgrepo-com.svg" alt="Python" id="itemImg" width="30">
+                        <img src="assets/python2.svg" alt="python2" id="itemImg" width="30">
                         Usei Python
                     </div>
                     </p>
@@ -108,7 +108,7 @@
                 <p>Falei que é muito legal.</p>
                 <li>
                     <div style="float: left;">
-                        <img src="assets/cow-svgrepo-com.svg" alt="Python" id="itemImg" width="30">
+                        <img src="assets/cow.svg" alt="Python" id="cow" width="30">
                         Assisti rodeio na FICAR
                     </div>
                     </p>
@@ -116,7 +116,7 @@
                 <p>Mesmo não entendendo nada de rodeio.</p>
                 <li>
                     <div style="float: left;">
-                        <img src="assets/fireworks-svgrepo-com.svg" alt="Python" id="itemImg" width="30">
+                        <img src="assets/fireworks.svg" alt="Python" id="fireworks" width="30">
                         Assisti show na FICAR
                     </div>
                     </p>
@@ -126,8 +126,11 @@
         </div>
     </div>
     <div class="btn">
-        <button type="submit" id="botao"><img src="assets/moon.svg" alt="" width="35px"></button>
+        <button type="submit" id="botao"><img src="assets/moon.svg" alt="" width="35px" id="moon"></button>
     </div>
+    <div class="footer">
+    <p id="games">&copy; Gustavo Games - 2024</p>
+</div>
 
     <script src="scripts/script.js" onclick=""></script>
 </body>
